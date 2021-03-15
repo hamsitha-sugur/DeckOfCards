@@ -21,7 +21,7 @@ public class CardDeck {
      * Initializes Card Deck
      */
     public void setDeck() {
-        // initializes the deck
+        // initializes the deck - can be abstracted out to have different implementation
         this.deck = new ArrayList<>(CARD_COUNT);
         for (Face faceValue: Face.values()) {
             for (Suit suit : Suit.values()) {
